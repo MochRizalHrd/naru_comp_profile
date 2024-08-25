@@ -16,7 +16,7 @@ body {
 .navbar .navbar-brand {
   color: #333333 !important;
   font-weight: 650;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .navbar .nav-link {
@@ -26,4 +26,26 @@ body {
 
 .navbar .nav-link:hover {
   color: #3795bd !important;
+}
+
+.konten-satu-text {
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+  display: flex; /* Menggunakan flexbox */
+  justify-content: space-between; /* Mengatur jarak antara elemen */
+  align-items: center; /* Menyelaraskan secara vertikal */
+}
+
+.text-1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.text-2 {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  width: 50%; /* Atur lebar untuk menyesuaikan layout */
 }
