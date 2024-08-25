@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f8;
+}
+
+.navbar {
+  background-color: #f7f7f8 !important;
+}
+
+.navbar .container-fluid {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.navbar .navbar-brand {
+  color: #333333 !important;
+  font-weight: 650;
+  font-size: 24px;
+}
+
+.navbar .nav-link {
+  color: #333333 !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #3795bd !important;
+}
