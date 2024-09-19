@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f7f7f8;
+  font-family: Arial, sans-serif;
 }
 
 .navbar {
@@ -16,7 +17,7 @@ body {
 .navbar .navbar-brand {
   color: #333333 !important;
   font-weight: 650;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .navbar .nav-link {
@@ -28,24 +29,83 @@ body {
   color: #3795bd !important;
 }
 
+/* bagian home */
+
 .konten-satu-text {
-  margin-top: 50px;
-  margin-left: 80px;
-  margin-right: 80px;
-  display: flex; /* Menggunakan flexbox */
-  justify-content: space-between; /* Mengatur jarak antara elemen */
-  align-items: center; /* Menyelaraskan secara vertikal */
+  height: 90vh; /* Tinggi penuh layar */
+  background-image: url("../img/gedung1.jpg"); /* Set background image */
+  background-size: cover; /* Agar gambar menutupi seluruh area */
+  background-position: center; /* Pusatkan gambar */
+  position: relative; /* Memastikan overlay ditempatkan dengan benar */
+  padding: 100px 80px;
+}
+
+.konten-satu-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(
+    0.2,
+    0.2,
+    0.2,
+    0.1
+  ); /* Overlay gelap dengan transparansi lebih tinggi */
+  z-index: 1; /* Lapisan ini di bawah teks */
+}
+
+.konten-satu-text .text-content {
+  position: relative; /* Menempatkan konten di atas overlay */
+  z-index: 2;
+  padding: 20px; /* Tambahkan padding untuk teks */
 }
 
 .text-1 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333333;
+  font-size: 55px;
+  font-weight: bold; /* Mengubah ke bold untuk menonjolkan teks */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff; /* Warna teks putih */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); /* Bayangan teks yang lebih kuat */
+  text-align: center;
+}
+
+.text-1 p {
+  margin: 0;
+  line-height: 1.2;
+  color: #f9f9f9; /* Warna teks putih */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9); /* Bayangan teks yang lebih kuat */
+  font-weight: bold; /* Menambahkan ketebalan pada teks */
 }
 
 .text-2 {
-  font-size: 16px;
-  color: #666666;
-  line-height: 1.6;
-  width: 50%; /* Atur lebar untuk menyesuaikan layout */
+  color: #f9f9f9; /* Warna teks putih */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); /* Bayangan teks yang lebih kuat */
+  text-align: center;
+  background-color: #3795bd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan halus di sekitar kotak teks */
+  max-width: 500px; /* Membatasi lebar maksimum agar teks tidak terlalu melebar */
+  margin: 0 auto; /* Mengatur teks agar berada di tengah halaman secara horizontal */
+}
+
+/* bagian about */
+.about-judul {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 16px; /* Sedikit meningkatkan ukuran font untuk keterbacaan */
+  line-height: 1.6; /* Meningkatkan jarak antar baris untuk memberi ruang napas pada teks */
+  text-align: justify; /* Justifikasi untuk teks yang rata kiri dan kanan */
+  color: #333333; /* Warna teks abu-abu gelap yang lebih lembut di mata */
+  padding: 40px; /* Menambahkan padding untuk memberi ruang di sekeliling teks */
+  background-color: #f9f9f9; /* Memberikan latar belakang yang lebih terang agar teks terlihat lebih jelas */
+  border-radius: 8px; /* Membulatkan sudut untuk tampilan lebih modern */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan halus di sekitar kotak teks */
+  max-width: 1200px; /* Membatasi lebar maksimum agar teks tidak terlalu melebar */
+  margin: 0 auto; /* Mengatur teks agar berada di tengah halaman secara horizontal */
 }
